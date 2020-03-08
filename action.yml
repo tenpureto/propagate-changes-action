@@ -1,5 +1,5 @@
 name: Tenpureto
-description: Propagate template changes to child branches
+description: Keep tenpureto template branches in sync
 inputs:
   pull-request-label:
     description: Labels to assign to the created pull requests
