@@ -1,0 +1,14 @@
+name: Tenpureto
+description: Propagate template changes to child branches
+inputs:
+  pull-request-label:
+    description: Labels to assign to the created pull requests
+    required: false
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  env:
+    PULL_REQUEST_LABEL: ${{ inputs.pull-request-label }}
+branding:
+  icon: git-merge
+  color: blue
