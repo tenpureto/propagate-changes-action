@@ -4,7 +4,7 @@ RUN apk add --no-cache bash curl jq
 
 RUN apk add --no-cache -X http://dl-cdn.alpinelinux.org/alpine/edge/testing hub
 
-ENV TENPURETO_VERSION=0.5.0
+ENV TENPURETO_VERSION=0.6.0
 RUN curl -sL https://github.com/tenpureto/tenpureto/releases/download/v${TENPURETO_VERSION}/tenpureto-${TENPURETO_VERSION}-x86_64-linux -o /usr/bin/tenpureto && \
     chmod +x /usr/bin/tenpureto
 
