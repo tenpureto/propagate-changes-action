@@ -1,6 +1,6 @@
 FROM alpine/git:latest
 
-RUN apk add --no-cache bash curl jq
+RUN apk add --no-cache bash curl curl-dev jq
 
 RUN apk add --no-cache -X http://dl-cdn.alpinelinux.org/alpine/edge/testing hub
 
